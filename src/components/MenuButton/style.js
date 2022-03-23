@@ -1,7 +1,7 @@
 import styled from "styled-components";
 
 export const NavButton = styled.button`
-    background-color: blue;
+    background-color: #006ba6;
     border-radius: 5px;
     border: none;
     margin: 1rem 0 1rem 0rem;

@@ -11,15 +11,12 @@ export default function Navbar() {
                     <a href="#">Rafael Jordão</a>
                 </Logo>
                 <div>
-                <a href="#"><li>Contact me</li></a>
+                <a href="https://linktr.ee/_rafaeljordao" target="_blank"><li>Contact me</li></a>
                 <MenuButton />
                 </div>
             </NavMenu>
         </header>
               
-
-
-
     )
 }
 

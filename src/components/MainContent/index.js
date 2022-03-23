@@ -1,24 +1,26 @@
-import React from "react";
+import React, { useState } from "react";
 import { Content } from "./style";
 import MyImage from '../MainContent/images/profileImage.png';
+import TextBox from "../TextBox";
 
-/*
-const ToggleButton = (props)=> {
-    const [toggle, setToggle] = useState()
-}
 
-function activeButton() {
+//const [isHovering, setIsHovering] = useState(false)
 
-}
-*/
 const MainContent = () => {
-    return (
+    
+    const [isShow, setIsShow] = useState(false)
 
+    return (
         <Content>
-       
-            <img src={MyImage}></img>
            
-            
+            <>
+                {isShow && (<TextBox /> )}
+                <img onMouseEnter={() => setIsShow(true)}
+                     onMouseLeave={() => setIsShow(false)} 
+                     src={MyImage}>
+                </img>
+            </>
+                
             <div>
                 <h2>Hello,</h2>
                 <h1>I'm Rafael Jordão</h1>
@@ -29,10 +31,13 @@ const MainContent = () => {
                 </ul>
             </div>
 
-
         </Content>
 
     )
 }
 
 export default MainContent;
+
+                
+                           
+

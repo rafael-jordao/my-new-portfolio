@@ -8,6 +8,9 @@ export const Content = styled.div`
     gap: 3rem;
     align-items: center;
 
+    p {
+        margin-top: 1rem;
+    }
 
     ul {
         display: flex;
